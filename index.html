@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Lo-Fi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            /* Agrega esto para evitar barras de desplazamiento */
+            background-color: #1a1a1a;
+        }
+
+        .background {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://wallpaperbat.com/img/7200619-anime-man-in-lofi-desktop-room-wallpaper.png');
+            /* Ruta a tu imagen de fondo */
+            background-size: cover;
+            filter: blur(10px);
+            /* Si quieres aplicar un efecto de desenfoque */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+            /* Agrega esto para que el contenido esté sobre la imagen de fondo */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid white;
+            padding-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: rgba(255, 255, 255, 0.3);
+            /* Color de fondo del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Cambio de color al pasar el mouse */
+        }
+
+        .button:active {
+            transform: translateY(2px);
+        }
+
+        .coffee-gif {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>Bienvenido a la pagina oficial de TVA</h1>
+        <p>¡Disfruta de la vibra chill!</p>
+        <div class="button-container">
+            <a href="https://discord.gg/Jw9mUwXWdF" class="button">Discord <img src=""></a>
+            <a href="https://chat.whatsapp.com/DkHDF0KH3oqHJgTcoufSED" class="button">WhatsApp <img src=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
